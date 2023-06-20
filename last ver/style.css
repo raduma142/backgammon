@@ -1,0 +1,122 @@
+ /*�����*/
+html, body, .board
+{
+  height: calc(100% * 13 / 15);
+  width: calc(100% * 13 / 15);
+  margin: 0;
+  text-align: center;
+}
+
+.board
+{  
+  position: absolute;
+  left: calc(100% / 15);
+  top: calc(100% / 15);
+  border: 1px solid;
+  border-style: inset;
+  background-color: rgb(245,222,179);
+}
+
+.board td
+{
+  width: calc(100% / 13);
+  transition: background-color 0.5s ease 0s;  
+}
+
+.selected
+{
+  background-color: rgb(0,204,153);
+}
+
+.possible1
+{
+  background-color: rgb(0,153,255);
+}
+
+.possible2
+{
+  background-color: rgb(153,153,255);
+}
+
+.possible3
+{
+  background-color: rgb(255,153,255);
+}
+
+.possible4
+{
+  background-color: rgb(255,51,102);
+}
+
+canvas
+{
+  width: 100%;
+  height: 100%;
+}
+
+.bottom canvas, #home2 canvas
+{
+  transform: rotate(180deg);
+}
+
+/*�����*/
+.dice
+{
+  position: absolute;
+  left: 38%;
+  top: calc(50% - 25px);
+}
+
+#dice1, #dice2, #dice3, #dice4, #drop
+{
+  border: 3px solid;
+  border-style: outset;
+  border-radius: 20%;
+}
+
+.white
+{
+  color: black;
+  background-color: wheat;
+}
+
+.black
+{
+  color: white;
+  background-color: #500000;
+  transform: rotate(180deg);
+}
+
+.dark
+{
+  background-color: rgb(102,0,0);
+}
+
+/*������ �������*/
+#drop
+{
+  font-size: 20pt;
+  height: 50px;
+  border: 1px solid; 
+}
+
+/*������*/
+.home
+{
+  position: absolute;
+  width: calc(100% / 15);
+  height: calc(100% * 13 / 15);
+  top: calc(100% / 15);
+  border: 1px solid;
+  transition: background-color 0.5s ease 0s;
+}
+
+#home2
+{
+  left: 0;
+}
+
+#home1
+{
+  right: 0;
+}

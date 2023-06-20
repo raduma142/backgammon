@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='ru'>
+  <head>
+    <title>Нарды</title>
+    <meta charset='utf-8'>
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' content=''>
+    <meta name='robots' content='all'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <!-- <link href='/favicon.png' rel='shortcut icon' type='image/png'> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body class='dark'>
+    <!-- Board -->
+    <table class="board">
+      <tr class='top'>
+      </tr>
+      <tr class='bottom'>
+      </tr>
+    </table>
+    
+    <table class='dice'>
+      <tr>
+        <td id='dice3'>
+          <canvas>
+        </td>
+        <td id='dice1'>
+          <canvas>
+        </td>
+        <td id='dice2'>
+          <canvas>
+        </td>
+        <td id='dice4'>
+          <canvas>
+        </td>
+      </tr>          
+      <tr>
+        <td></td>
+        <td id='drop' colspan="2" onclick='drop()'>Бросить</td>
+        <td></td>
+      </tr>
+    </table>
+    
+    <div class='home dark' id='home1' onclick="moveHome()">
+    </div>
+    
+    <div class='home dark' id='home2' onclick="moveHome()">
+    </div>
+  
+  <!-- Подключение кода -->  
+  <script src="script.js"></script>
+  </body>
+</html>
